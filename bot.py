@@ -119,15 +119,15 @@ async def finish(update: Update, context: ContextTypes.DEFAULT_TYPE):
     })
 
     await update.message.reply_text(
-        f"Поездка сохранена:
+        f"Поездка сохранена":
 "
-        f"Тип: {t_type}, Направление: {direction}
+        f"Тип": {t_type}, Направление: {direction}
 "
-        f"Явка: {start}, Сдача: {end}
+        f"Явка": {start}, Сдача: {end}
 "
-        f"Всего часов: {round(hours, 2)}
+        f"Всего часов": {round(hours, 2)}
 "
-        f"Ночных часов: {night_hours}"
+        f"Ночных часов": {night_hours}"
     )
     return await start(update, context)
 
